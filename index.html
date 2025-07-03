@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hijrah TV</title>
+    <meta name="description" content="Hijrah TV: A modern TV station offering content across education, lifestyle, religion, and entertainment." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #fff;
+        color: #111;
+      }
+      header {
+        background-color: #007f3f;
+        color: white;
+        padding: 20px;
+        border-bottom: 4px solid #004d26;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.5em;
+      }
+      header p {
+        margin-top: 5px;
+        font-size: 1.1em;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #004d26;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+      }
+      nav .logo {
+        font-weight: bold;
+        color: white;
+        font-size: 1.5em;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      .search-bar {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: #e6f2ed;
+      }
+      .search-bar input {
+        padding: 8px;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+      }
+      .search-bar button {
+        padding: 8px 16px;
+        background-color: #007f3f;
+        color: white;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      article {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+      }
+      article h2 {
+        color: #007f3f;
+        margin-bottom: 10px;
+      }
+      article p {
+        margin-bottom: 10px;
+      }
+      iframe {
+        width: 100%;
+        height: 315px;
+        border: none;
+        border-radius: 5px;
+      }
+      aside {
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      aside h3 {
+        color: #007f3f;
+        margin-bottom: 10px;
+      }
+      aside ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #007f3f;
+        color: white;
+        margin-top: 40px;
+        font-size: 0.9em;
+      }
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .search-bar input {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hijrah TV</h1>
+      <p>Modern news and entertainment from around the world.</p>
+    </header>
+
+    <nav>
+      <div class="logo">HIJRAH TV</div>
+      <ul>
+        <li><a href="#entertainment">Entertainment</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#faith">Faith</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#politics">Politics</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search Hijrah TV..." />
+      <button>Search</button>
+    </div>
+
+    <main>
+      <div class="main-content">
+        <article id="entertainment">
+          <h2>🎥 Entertainment Spotlight</h2>
+          <p>Catch up with trending shows, interviews, and behind-the-scenes clips from your favorite stars.</p>
+          <iframe src="https://www.youtube.com/embed/6zJxuP5Kx4c" title="Entertainment Segment"></iframe>
+        </article>
+
+        <article id="education">
+          <h2>📚 Educational Insights</h2>
+          <p>Expand your mind with educational videos and documentary features on various subjects.</p>
+          <iframe src="https://www.youtube.com/embed/3rVjPZSWVnY" title="Educational Feature"></iframe>
+        </article>
+
+        <article id="faith">
+          <h2>🕌 Faith & Reflection</h2>
+          <p>Discover spiritual reminders, Quranic reflections, and Islamic values for modern life.</p>
+          <iframe src="https://www.youtube.com/embed/KxGRhd_iWuE" title="Spiritual Talk"></iframe>
+        </article>
+
+        <article id="sports">
+          <h2>⚽ Sports Update</h2>
+          <p>Highlights and insights from local and international matches.</p>
+          <iframe src="https://www.youtube.com/embed/GwI7UkTLO9g" title="Sports News"></iframe>
+        </article>
+
+        <article id="politics">
+          <h2>🗳️ Political Digest</h2>
+          <p>Stay informed on political developments and expert opinions.</p>
+          <iframe src="https://www.youtube.com/embed/OsbMiVGQ_Xk" title="Politics Report"></iframe>
+        </article>
+      </div>
+
+      <aside>
+        <h3>Latest Headlines</h3>
+        <ul>
+          <li><strong>Update:</strong> New educational program launched across 10 regions</li>
+          <li><strong>Interview:</strong> Exclusive talk with rising media talent</li>
+          <li><strong>Feature:</strong> Tech meets faith in our latest series</li>
+          <li><strong>Breaking:</strong> Local football team wins national cup</li>
+          <li><strong>Politics:</strong> Parliament passes new media regulations</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer id="contact">
+      <p>&copy; 2025 Hijrah TV. All rights reserved. | Contact: info@hijrahtv.com</p>
+    </footer>
+  </body>
+</html>
